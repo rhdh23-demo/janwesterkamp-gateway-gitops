@@ -1,0 +1,15 @@
+app:
+  name: janwesterkamp-poi-gateway-app
+  namespace: janwesterkamp
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/janwesterkamp-gateway
+  org: rhdh23-demo
+  name: janwesterkamp-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: janwesterkamp/poi-gateway-app
+  tag: latest
